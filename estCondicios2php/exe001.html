@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .botao{
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            align-items: center;
+            margin-top: 5px;
+    
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="exe001.php">
+        Digite um numero:
+        <input type="number" name="num" placeholder="numero"><br>
+        <fieldset> <legend>Operação</legend>
+            <input type="radio" name="oper"  value="1" id="dobro"checked>
+            <label for="dobro">Dobro</label>
+            <input type="radio" name="oper" value="2"id="cubo" >
+            <label for="cubo">Cubo</label>
+            <input type="radio" name="oper" value="3"id="raiz" >
+            <label for="raiz">Raiz</label>
+        </fieldset>
+        <input type="submit" value="Calcular" class="botao">
+    </form>
+</body>
+</html>
